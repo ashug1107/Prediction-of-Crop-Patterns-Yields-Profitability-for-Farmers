@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: linear-gradient(to right, #f0fdf4, #e0f7f3);
+    color: #1a202c;
+    overflow-x: hidden;
+  }
+  header {
+    background: linear-gradient(to right, #38bdf8, #06b6d4);
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  header h1 {
+    color: white;
+    font-size: 2rem;
+  }
+  nav a {
+    color: white;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #fcd34d;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+    background: linear-gradient(90deg, #bbf7d0 0%, #99f6e4 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.3), transparent);
+    border-radius: 50%;
+    animation: float 10s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(15px); }
+  }
+  .hero-text {
+    max-width: 50%;
+    animation: slideInLeft 1s ease-out;
+  }
+  @keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  .hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .hero-text button {
+    padding: 1rem 2rem;
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .hero-text button:hover {
+    background-color: #15803d;
+  }
+  .hero img {
+    width: 450px;
+    border-radius: 1.5rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1.2s ease-in;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  .info-section {
+    background-color: #ecfdf5;
+    padding: 4rem 6rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .info-section .info-text {
+    flex: 1;
+  }
+  .info-section h3 {
+    font-size: 2.5rem;
+    color: #065f46;
+    margin-bottom: 1rem;
+  }
+  .info-section p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #064e3b;
+  }
+  .info-section img {
+    width: 400px;
+    border-radius: 1.25rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  .form-section {
+    padding: 4rem 6rem;
+    background-color: #f0fdf4;
+  }
+  .form-section h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #065f46;
+  }
+  form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .input-group {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #d1fae5;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  .input-group i {
+    margin-right: 0.75rem;
+    color: #10b981;
+  }
+  .input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  .submit-btn {
+    grid-column: 1 / -1;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .submit-btn:hover {
+    background-color: #059669;
+  }
+  .result {
+    padding: 4rem 6rem;
+    background-color: #ecfdf5;
+    text-align: center;
+  }
+  .result h4 {
+    font-size: 2rem;
+    color: #065f46;
+    margin-bottom: 1rem;
+  }
+  .result p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .result img {
+    width: 300px;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
