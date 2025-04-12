@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Market Prediction Dashboard</title>
+  <link rel="stylesheet" href="marketanalysis.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>🌱 Crop Wizard</h2>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Crop Recommendation</a>
+        <a class="active" href="#">Market Prediction</a>
+        <a href="#">Govt. Schemes</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+      </nav>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+      <header>
+        <input type="text" placeholder="Search crops, regions..." />
+        <div class="user-info">
+          <span>👤 Farmer</span>
+        </div>
+      </header>
+
+
+      <section class="dashboard">
+        <!-- Cards -->
+        <div class="card">
+          <h3>📈 Predicted Crop Demand</h3>
+          <p>Wheat, Maize, Rice showing rising trends in Punjab.</p>
+        </div>
+
+
+        <div class="card">
+          <h3>💹 Current Market Prices</h3>
+          <table>
+            <thead>
+              <tr><th>Crop</th><th>Price (₹/qtl)</th><th>Region</th><th>Trend</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Wheat</td><td>2200</td><td>Punjab</td><td>↑</td></tr>
+              <tr><td>Rice</td><td>1900</td><td>Bihar</td><td>↓</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="card">
+          <h3>✅ Top Recommended Crops</h3>
+          <ul>
+            <li>🌾 Wheat – Profit ↑</li>
+            <li>🌿 Mustard – High Yield</li>
+          </ul>
+        </div>
+
+
+        <div class="card">
+          <h3>🗺️ Regional Insights</h3>
+          <p>Interactive crop trend map coming soon.</p>
+        </div>
+
+
+        <div class="card">
+          <h3>📢 Govt. MSP Updates</h3>
+          <ul>
+            <li>Wheat MSP: ₹2150/qtl</li>
+            <li>Rice MSP: ₹1940/qtl</li>
+          </ul>
+        </div>
+
+
+        <div class="card">
+          <h3>📄 Export Reports</h3>
+          <button>Download PDF</button>
+          <button>Email Weekly Summary</button>
+        </div>
+      </section>
+    </main>
+''  </div>
+</body>
+</html>
